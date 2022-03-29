@@ -1,0 +1,10 @@
+{
+    "dataset_config" : {
+        "directory":"/root/data/ntu/",
+        "partition":"xsub",
+        "use_mmap": true,
+        "batchsize":64,
+        "num_workers":4,
+        "debug":false
+    }
+}

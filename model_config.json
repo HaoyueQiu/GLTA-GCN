@@ -1,0 +1,20 @@
+{
+    "model_config" : {
+        "model_path":"Model.shiftGCN",
+        "model_name":"Model",
+        "model_args":{
+            "num_class": 60,
+            "num_point": 25,
+            "num_person":2,
+            "graph": "Model.graph.ntu_rgb_d",
+            "graph_args":{
+                "labeling_mode": "spatial" 
+            }
+        },
+        "device":[0,1,2,3],
+        "optimizer":"SGD",
+        "weight_decay": 0.0001,
+        "base_lr": 0.1,
+        "step":[60,80,100]
+    }
+}
